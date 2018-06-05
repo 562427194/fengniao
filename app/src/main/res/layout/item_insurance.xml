@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_default"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <mybase.library.view.RoundAngleImageView
+            android:id="@+id/riv_customer"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:roundHeight="4dp"
+            app:roundWidth="4dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxWidth="150dp"
+                android:textColor="@color/black_list_title"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:id="@+id/tv_age_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="5dp"
+                android:text="投保范围：0-70周岁"
+                android:textColor="@color/gray_text_content"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="800"
+                    android:textColor="@color/yellow_price"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/up"
+                    android:textColor="@color/black_text"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <Button android:id="@+id/bt_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/selector_fn_default_bt"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:text="@string/buy"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/gray_h_line"
+        android:layout_height="10dp"
+        android:background="@color/gray_bg_common" />
+</LinearLayout>

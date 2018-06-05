@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?colorPrimary"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/my_search"
+            android:textColor="@color/black_text"
+            android:textSize="16dp" />
+
+
+    </FrameLayout>
+
+    <View style="@style/gray_h_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <EditText
+            style="@style/common_item_edit"
+            android:hint="@string/input_policy_no" />
+
+        <View style="@style/gray_h_line" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/common_item_edit"
+            android:background="@drawable/selector_default"
+            android:drawableRight="@mipmap/icon_calendar"
+            android:hint="@string/time" />
+
+        <View style="@style/gray_h_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/common_item_edit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/customer" />
+
+            <RadioGroup
+                android:id="@+id/rg_insurancer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="10dp">
+
+                <RadioButton
+                    android:id="@+id/rb_insurnce_of"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_frame_radio_bg"
+                    android:button="@null"
+                    android:padding="3dp"
+                    android:text="@string/insurance_of"
+                    android:textColor="@color/selector_tab_text"
+                    android:textSize="12dp" />
+
+                <RadioButton
+                    android:id="@+id/rb_insurnce_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/selector_frame_radio_bg"
+                    android:button="@null"
+                    android:padding="3dp"
+                    android:text="@string/insurance_to"
+                    android:textColor="@color/selector_tab_text"
+                    android:textSize="12dp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <View style="@style/gray_h_line" />
+
+        <EditText
+            style="@style/common_item_edit"
+            android:hint="@string/input_customer_name" />
+
+        <View style="@style/gray_h_line" />
+
+        <TextView
+            style="@style/common_item_edit"
+            android:background="@drawable/selector_default"
+            android:drawableRight="@mipmap/icon_right_arrow"
+            android:onClick="onViewClick"
+            android:hint="@string/lattice_point" />
+
+        <View style="@style/gray_h_line" />
+
+        <Button
+            android:id="@+id/bt_search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_fn_default_bt"
+            android:text="@string/search"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+
+    <View style="@style/gray_h_line" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/rg_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_grey"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/tab_product"
+                style="@style/tab_radio"
+                android:drawableTop="@drawable/selector_tab_product"
+                android:text="@string/product"/>
+
+            <RadioButton
+                android:id="@+id/tab_insurance"
+                style="@style/tab_radio"
+                android:drawableTop="@drawable/selector_tab_insurance"
+                android:text="@string/insurance"/>
+
+            <RadioButton
+                android:id="@+id/tab_search"
+                style="@style/tab_radio"
+                android:drawableTop="@drawable/selector_tab_search"
+                android:text="@string/search"/>
+
+            <RadioButton
+                android:id="@+id/tab_achievement"
+                style="@style/tab_radio"
+                android:drawableTop="@drawable/selector_tab_achievement"
+                android:text="@string/achievement"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_session_unread"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/shape_un_read" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_customer_unread"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/shape_un_read" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_order_unread"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/shape_un_read" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_setting_unread"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/shape_un_read" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

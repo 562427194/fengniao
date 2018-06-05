@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <EditText
+            style="@style/common_item_edit"
+            android:hint="@string/input_insurance_of_name" />
+
+        <View style="@style/gray_h_line" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+
+            <FrameLayout style="@style/text_insurance_key"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                >
+
+                <TextView android:id="@+id/tv_insurance_num_type"
+                    style="@style/common_item_edit"
+                    android:drawableRight="@mipmap/icon_arrow"
+                    android:hint="证件类型"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/selector_default"
+                    />
+
+                <Spinner
+                    android:id="@+id/sp_insurance_num_type"
+                    style="@style/common_item_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="0dp"
+                    android:background="@null"
+                    android:entries="@array/insurance_num_types"
+                    android:spinnerMode="dialog"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <EditText
+                style="@style/common_item_edit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="@string/input_insurance_of_num" />
+        </LinearLayout>
+
+        <View style="@style/gray_h_line" />
+        <FrameLayout style="@style/text_insurance_key"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            >
+
+            <TextView android:id="@+id/tv_insurance_relation"
+                style="@style/common_item_edit"
+                android:layout_width="match_parent"
+                android:drawableRight="@mipmap/icon_arrow"
+                android:hint="@string/input_insurance_relation"
+                android:background="@drawable/selector_default"
+                android:paddingRight="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/sp_insurance_relation"
+                style="@style/common_item_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"
+                android:background="@null"
+                android:entries="@array/insurance_relations"
+                android:spinnerMode="dialog"
+                android:visibility="invisible" />
+        </FrameLayout>
+        <View style="@style/gray_h_line" />
+        <EditText
+            style="@style/common_item_edit"
+            android:hint="@string/input_insurance_to_name" />
+
+        <View style="@style/gray_h_line" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+
+            <FrameLayout style="@style/text_insurance_key"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                >
+
+                <TextView android:id="@+id/tv_insurance_to_num_type"
+                    style="@style/common_item_edit"
+                    android:drawableRight="@mipmap/icon_arrow"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/selector_default"
+                    android:hint="证件类型"
+                    />
+
+                <Spinner
+                    android:id="@+id/sp_insurance_to_num_type"
+                    style="@style/common_item_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="0dp"
+                    android:background="@null"
+                    android:entries="@array/insurance_num_types"
+                    android:spinnerMode="dialog"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <EditText
+                style="@style/common_item_edit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="@string/input_insurance_of_num" />
+        </LinearLayout>
+
+        <View style="@style/gray_h_line" />
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/common_item_edit"
+            android:background="@drawable/selector_default"
+            android:drawableRight="@mipmap/icon_calendar"
+            android:hint="@string/insurance_to_birthday" />
+
+        <View style="@style/gray_h_line" />
+        <EditText
+            style="@style/common_item_edit"
+            android:inputType="phone"
+            android:hint="@string/input_phone_num" />
+
+        <View style="@style/gray_h_line" />
+
+        <Button
+            android:id="@+id/bt_search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/selector_fn_default_bt"
+            android:text="@string/insure"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

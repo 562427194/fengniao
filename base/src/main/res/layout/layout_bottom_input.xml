@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#ffffff"
+              android:gravity="center"
+              android:orientation="vertical"
+              >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:textColor="@color/dialog_buttom_text"
+            android:text="@string/cancel"/>
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:textColor="@color/dialog_buttom_text"
+            android:paddingRight="10dp"
+            android:enabled="false"
+            android:text="@string/confirm"/>
+    </FrameLayout>
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@null"
+        android:gravity="top"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="14dp"/>
+</LinearLayout>

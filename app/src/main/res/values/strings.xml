@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">丰鸟互联</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="insure">投保</string>
+    <string name="product">产品</string>
+    <string name="insurance">保险</string>
+    <string name="search">查询</string>
+    <string name="achievement">业绩</string>
+    <string name="buy">购买</string>
+
+    <string name="my_product">我的产品</string>
+    <string name="my_insurance">我的保险</string>
+    <string name="my_search">我的查询</string>
+    <string name="my_achievement">我的业绩</string>
+
+    <string name="policy_no">保单号</string>
+    <string name="time">时间</string>
+    <string name="customer">客户</string>
+    <string name="customer_name">客户姓名</string>
+    <string name="lattice_point">网点</string>
+    <string name="up">起</string>
+    <string name="yuan">元</string>
+    <string name="input_policy_no">请输入保单号</string>
+    <string name="input_customer_name">请输入客户姓名</string>
+    <string name="insurance_of">投保人</string>
+    <string name="insurance_to">被保人</string>
+
+    <string name="input_insurance_of_name">请输入投保人姓名</string>
+    <string name="input_insurance_to_name">请输入被保人姓名</string>
+    <string name="input_insurance_of_num">请输入投保人证件号码</string>
+    <string name="input_insurance_to_num">请输入被保人证件号码</string>
+    <string name="input_insurance_relation">投被保人关系</string>
+    <string name="insurance_to_birthday">被保人生日</string>
+    <string name="input_phone_num">请输入手机号码</string>
+
+    <string-array name="insurance_relations">
+        <item>亲属</item>
+        <item>母子</item>
+        <item>父子</item>
+        <item>母女</item>
+        <item>父女</item>
+        <item>祖孙</item>
+        <item>侄儿</item>
+        <item>侄女</item>
+        <item>姐弟</item>
+    </string-array>
+
+    <string-array name="insurance_num_types">
+        <item>身份证</item>
+        <item>护照</item>
+        <item>军官证</item>
+        <item>驾驶证</item>
+        <item>其他</item>
+    </string-array>
+</resources>

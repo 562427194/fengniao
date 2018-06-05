@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/bg_grey</color>
+    <color name="colorPrimaryDark">@color/bg_grey</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_text">#353535</color>
+    <color name="black_list_title">#424242</color>
+    <color name="gray_text_content">#707070</color>
+    <color name="yellow_price">#EEA35C</color>
+    <color name="gray_bg_common">#F0F0F0</color>
+
+    <color name="unread">#DD4E42</color>
+    <color name="bg_grey">#F4F4F4</color>
+    <color name="tab_text_normal">#A6A6A6</color>
+    <color name="tab_text_checked">#7589F5</color>
+    <color name="def_bt_pressed">#4662F1</color>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent_gray">#3222</color>
+    <color name="wskcs_gray">#CCCCCC</color>
+    <color name="wskcs_gray_text">#888888</color>
+    <color name="wskcs_blue">#0000ff</color>
+
+    <color name="zbase_pressed">#F8F8F8</color>
+    <color name="white">#FFFF</color>
+    <color name="zbase_gray_line">#CCCCCC</color>
+    <color name="black">#000</color>
+</resources>

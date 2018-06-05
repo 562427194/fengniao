@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape>
+            <stroke android:width="1px" android:color="@color/tab_text_checked"></stroke>
+            <corners android:radius="2dp"></corners>
+        </shape>
+    </item>
+    <item >
+        <shape>
+            <stroke android:width="1px" android:color="@color/tab_text_normal"></stroke>
+            <corners android:radius="2dp"></corners>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string name="zbase_please_wait">请稍候...</string>
+    <string name="finish">完成</string>
+
+    <string name="wskcss_touch_to_record">按住录音</string>
+    <string name="wskcss_loosen_finger_cancel_record">松开手指，取消录音</string>
+    <string name="wskcss_loosen_finger_to_send">松开发送</string>
+    <string name="wskcss_slide_cancel_record">手指上滑，取消录音</string>
+    <string name="wskcss_cancel_record">取消录音</string>
+    <string name="wskcss_under_time">时间太短</string>
+    <string name="wskcss_record">录音</string>
+    <string name="wskcss_minuts_than_send">秒后发送</string>
+    <string name="wskcss_send">发送</string>
+    <string name="wskcss_finish">完成</string>
+
+    <string name="wskcss_tip_take_photo">拍摄照片</string>
+    <string name="wskcss_action_done">完成</string>
+    <string name="wskcss_all_photos">所有照片</string>
+    <string name="wskcss_image_error">图片错误</string>
+    <string name="wskcss_no_system_camera">没有系统相机</string>
+    <string name="wskcss_number_has_reached_the_highest_choice">已经达到最高选择数量</string>
+    <string name="wskcss_preview">预览</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+
+
+</resources>
